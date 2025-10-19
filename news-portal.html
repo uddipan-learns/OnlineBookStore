@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Portal - Tech News Today</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      /* Header and Navigation */
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 15px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #3498db;
+      }
+
+      /* Main Container */
+      .container {
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+
+      /* Highlighted News Article */
+      .featured-article {
+        background-color: white;
+        padding: 30px;
+        margin-bottom: 40px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .featured-article h1 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+      }
+
+      .featured-article img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin: 20px 0;
+      }
+
+      .featured-article p {
+        color: #555;
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      /* Related Articles Section */
+      .related-articles {
+        margin-bottom: 40px;
+      }
+
+      .related-articles h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #3498db;
+      }
+
+      .articles-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .article-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .article-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .article-card h3 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      .article-card p {
+        color: #666;
+        font-size: 14px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        padding: 30px 0;
+        margin-top: 50px;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .footer-container h3 {
+        margin-bottom: 15px;
+      }
+
+      .footer-container p {
+        margin: 8px 0;
+      }
+
+      .copyright {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #555;
+        color: #aaa;
+      }
+
+      .footer-container a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .footer-container a:hover {
+        color: #3498db;
+      }
+
+      .footer-container a p {
+        margin: 8px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header and Navigation -->
+    <header>
+      <div class="header-container">
+        <div class="logo">Tech News Today</div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Sports</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Featured Article -->
+      <article class="featured-article">
+        <h1>Artificial Intelligence Transforms Modern Healthcare</h1>
+        <img src="./images/article-1.webp" alt="AI in Healthcare" />
+        <p>
+          In a groundbreaking development, artificial intelligence is
+          revolutionizing the healthcare industry. Medical professionals are now
+          using AI-powered diagnostic tools to detect diseases earlier and more
+          accurately than ever before.
+        </p>
+        <p>
+          Recent studies show that AI algorithms can identify certain types of
+          cancer with up to 95% accuracy, often catching issues that human
+          doctors might miss. Hospitals around the world are implementing these
+          technologies to improve patient outcomes and reduce healthcare costs.
+        </p>
+        <p>
+          "This is just the beginning," says Dr. Sarah Johnson, Chief Medical
+          Officer at City Hospital. "AI will continue to play an increasingly
+          important role in how we diagnose, treat, and prevent diseases."
+        </p>
+      </article>
+
+      <!-- Related Articles -->
+      <section class="related-articles">
+        <h2>Related Articles</h2>
+        <div class="articles-grid">
+          <div class="article-card">
+            <h3>Tech Giants Invest Billions in AI Research</h3>
+            <p>
+              Major technology companies are ramping up their investments in
+              artificial intelligence, with total spending expected to reach
+              $200 billion by 2025.
+            </p>
+          </div>
+          <div class="article-card">
+            <h3>New Privacy Regulations Impact Social Media</h3>
+            <p>
+              Government agencies worldwide are implementing stricter data
+              protection laws, forcing social media platforms to change how they
+              handle user information.
+            </p>
+          </div>
+          <div class="article-card">
+            <h3>Electric Vehicles Reach Record Sales</h3>
+            <p>
+              Electric vehicle sales have surged to unprecedented levels this
+              year, with consumers increasingly choosing sustainable
+              transportation options.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <h3>Contact Us</h3>
+        <a href="mailto:info@technewstoday.com"
+          ><p>Email: info@technewstoday.com</p></a
+        >
+        <a href="tel:info@technewstoday.com"><p>Phone: +91 1234567890</p></a>
+        <p>Address: 123 News Street, Tech City, TC 12345</p>
+
+        <div class="copyright">
+          <p>&copy; 2025 Tech News Today. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

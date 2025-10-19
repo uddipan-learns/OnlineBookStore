@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full">
+      <h2 class="text-2xl font-bold text-center mb-6">Student Profile</h2>
+
+      <div class="text-center mb-6">
+        <div
+          class="w-24 h-24 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold"
+        >
+          JS
+        </div>
+        <h3 class="text-xl font-bold text-gray-800">John Smith</h3>
+        <p class="text-gray-600 mt-2">Computer Science</p>
+        <p class="text-gray-500 text-sm">Class of 2025</p>
+      </div>
+
+      <div class="space-y-3 mb-6">
+        <div class="flex justify-between border-b pb-2">
+          <span class="text-gray-600">Student ID:</span>
+          <span class="font-semibold">CS2025001</span>
+        </div>
+        <div class="flex justify-between border-b pb-2">
+          <span class="text-gray-600">Email:</span>
+          <span class="font-semibold text-sm">john.smith@university.edu</span>
+        </div>
+        <div class="flex justify-between border-b pb-2">
+          <span class="text-gray-600">GPA:</span>
+          <span class="font-semibold">3.85</span>
+        </div>
+      </div>
+
+      <button
+        class="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
+      >
+        View Full Profile
+      </button>
+    </div>
+  </body>
+</html>

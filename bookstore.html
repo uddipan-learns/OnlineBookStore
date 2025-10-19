@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Bookstore - Best Sellers</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      .best-sellers {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .best-sellers h2 {
+        color: #444;
+        margin-bottom: 20px;
+      }
+
+      .best-sellers ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .best-sellers li {
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+
+      .best-sellers li a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* Visited links - purple color */
+      .best-sellers li a:visited {
+        color: purple;
+      }
+
+      /* First book - top pick (green bold text) */
+      .best-sellers li:first-child a {
+        color: green;
+        font-weight: bold;
+      }
+
+      .best-sellers li:first-child a:visited {
+        color: purple;
+      }
+
+      /* Last book - staff favorite (blue italics) */
+      .best-sellers li:last-child a {
+        color: blue;
+        font-style: italic;
+      }
+
+      .best-sellers li:last-child a:visited {
+        color: purple;
+      }
+
+      /* Even-numbered books - light grey background */
+      .best-sellers li:nth-child(even) {
+        background-color: #e0e0e0;
+      }
+
+      /* Hover effect - light yellow background and dark red text */
+      .best-sellers li:hover {
+        background-color: lightyellow;
+        cursor: pointer;
+      }
+
+      .best-sellers li:hover a {
+        color: darkred;
+      }
+
+      /* Active/Click effect - orange text */
+      .best-sellers li:active a {
+        color: orange;
+      }
+
+      /* Note styling */
+      .note {
+        margin-top: 30px;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border-left: 4px solid #4caf50;
+        position: relative;
+      }
+
+      .note::after {
+        content: "";
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .note:hover::after {
+        content: "Explore more categories soon!";
+        opacity: 1;
+        display: block;
+        margin-top: 10px;
+        color: #4caf50;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Our Online Bookstore</h1>
+
+    <div class="best-sellers">
+      <h2>Best Sellers</h2>
+      <ul>
+        <li><a href="#book1">The Midnight Library by Matt Haig</a></li>
+        <li><a href="#book2">Atomic Habits by James Clear</a></li>
+        <li><a href="#book3">The Silent Patient by Alex Michaelides</a></li>
+        <li><a href="#book4">Where the Crawdads Sing by Delia Owens</a></li>
+        <li><a href="#book5">Project Hail Mary by Andy Weir</a></li>
+      </ul>
+
+      <div class="note">
+        <strong>Note:</strong> Hover over this note for a special message!
+      </div>
+    </div>
+  </body>
+</html>
